@@ -132,12 +132,12 @@ class ViewController: UIViewController {
         
         let per: String = peratiotext.replacingOccurrences(of: ",", with: "");
         
-        guard let peratio: Double = Double(per) else {
-            print("The text \"\(peratiotext)\" is not a Double.");
-            return;
-        }
+//        guard let peratio: Double = Double(per) else {
+//            print("The text \"\(peratiotext)\" is not a Double.");
+//            return;
+//        }
         
-        peRatioLabel.text = String(format: "The PE Ratio of \(nametext) is %.2f", peratio)
+        peRatioLabel.text = "The PE Ratio of \(nametext) is \(per)"
         
         //EPS
         
@@ -158,12 +158,12 @@ class ViewController: UIViewController {
         
         let eps: String = epstext.replacingOccurrences(of: ",", with: "");
         
-        guard let earningsPerShare: Double = Double(eps) else {
-            print("The text \"\(epstext)\" is not a Double.");
-            return;
-        }
+//        guard let earningsPerShare: Double = Double(eps) else {
+//            print("The text \"\(epstext)\" is not a Double.");
+//            return;
+//        }
         
-        epsLabel.text = String(format: "The PE Ratio of \(nametext) is %.2f", earningsPerShare)
+        epsLabel.text = "The EPS of \(nametext) is \(eps)"
         
     }
     
